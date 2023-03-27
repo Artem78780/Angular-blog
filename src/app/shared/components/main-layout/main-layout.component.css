@@ -1,0 +1,11 @@
+.navbar {
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}

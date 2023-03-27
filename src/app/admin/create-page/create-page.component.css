@@ -1,0 +1,47 @@
+form {
+  max-width: 700px;
+  margin: 10px auto;
+}
+
+.form-control {
+  margin: 15px 0;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.form-control label {
+  color: rgb(0, 0, 0);
+}
+
+.quill {
+  margin-top: 5px;
+}
+
+.btn {
+  width: 100%;
+  margin: 15px auto;
+  display: block;
+  padding: 10px 25px;
+  background-color: #009928;
+  border: none;
+  color: white;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #005917;
+}
+
+.btn:disabled {
+  background-color: grey;
+}

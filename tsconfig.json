@@ -2,7 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
+    "paths": {
+      "quill/*": [
+        "node_modules/quill/*"
+      ]},
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,

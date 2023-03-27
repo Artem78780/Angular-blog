@@ -1,0 +1,33 @@
+.card {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+    margin-top: 15px;
+    padding: 10px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+strong {
+    margin-right: 15px;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    transition: .2s linear;
+}
+
+.btn:hover {
+    background-color: #005d00;
+}

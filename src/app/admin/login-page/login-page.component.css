@@ -1,0 +1,59 @@
+.card {
+    max-width: 600px;
+    margin: 30px auto;
+    border: 1px dashed rgb(100, 100, 100);
+    padding: 25px 25px 15px 25px;
+  }
+  
+  .card h2 {
+    text-align: center;
+  }
+  
+  .alert-dangure {
+      margin-top: 10px;
+      padding: 10px;
+      color: white;
+      font-size: 16px;
+      background-color: rgb(215 51 51);
+  }
+  
+  .form-control {
+    margin-top: 20px;
+  }
+  
+  .form-control input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 3px;
+    border-radius: 10px;
+  }
+  .is-invalid {
+    border: 2px solid red;
+  }
+  
+  .invalid {
+    color: red;
+  }
+  .valid {
+    border: 3px solid green;
+  }
+  
+  .btn {
+    margin: 15px auto;
+    display: block;
+    padding: 10px 25px;
+    background-color: #009928;
+    border: none;
+    color: white;
+    transition: 0.3s linear;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #005917;
+  } 
+  
+  .btn:disabled {
+      background-color: grey;
+  }
+  

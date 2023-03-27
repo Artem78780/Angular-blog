@@ -1,0 +1,67 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <h2 class="form-title">Створити пост</h2>
+    <div
+      class="form-control"
+      [ngClass]="{
+        invalid: form.get('title')?.touched && form.get('title')?.invalid
+      }"
+    >
+      <label for="title">Назва посту:</label>
+      <input
+        type="title"
+        id="title"
+        formControlName="title"
+        [class.is-invalid]="
+          form.get('title')?.touched && form.get('title')?.invalid
+        "
+      />
+      <div
+        *ngIf="form.get('title')?.touched && form.get('title')?.invalid"
+        class="validation"
+      >
+        <small *ngIf="form.get('title')?.errors?.['required']"
+          >Введіть назву посту:</small
+        >
+      </div>
+    </div>
+  
+    <div class="form-control">
+      <label>Контент посту:</label>
+      <div class="quill">
+      <quill-editor formControlName="text"></quill-editor>
+
+      </div>
+    </div>
+  
+    <div
+      class="form-control"
+      [ngClass]="{
+        invalid: form.get('author')?.touched && form.get('author')?.invalid
+      }"
+    >
+      <label for="author">Автор посту:</label>
+      <input
+        type="author"
+        id="author"
+        formControlName="author"
+        [class.is-invalid]="
+          form.get('author')?.touched && form.get('author')?.invalid
+        "
+      />
+      <div
+        *ngIf="form.get('author')?.touched && form.get('author')?.invalid"
+        class="validation"
+      >
+        <small *ngIf="form.get('author')?.errors?.['required']"
+          >Введіть автора постy</small
+        >
+      </div>
+    </div>
+  
+    <button
+      type="submit"
+      class="btn"
+      [disabled]="form.invalid"
+    >Створити пост</button>
+  </form>
+  
